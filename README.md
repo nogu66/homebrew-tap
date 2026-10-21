@@ -8,4 +8,4 @@ brew install --cask nogu66/tap/sumitex
 
 | Cask | What it is |
 | --- | --- |
-| [`sumitex`](Casks/sumitex.rb) | [Sumi TeX](https://github.com/nogu66/sumitex), a quiet LaTeX editor for macOS |
+| [`sumitex`](Casks/sumitex.rb) | [Sumitex](https://github.com/nogu66/sumitex), a quiet LaTeX editor for macOS |
