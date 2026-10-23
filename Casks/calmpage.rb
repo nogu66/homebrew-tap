@@ -18,9 +18,11 @@ cask "calmpage" do
   app "Calmpage.app"
 
   # The app is not notarized yet, so clear the quarantine flag Homebrew sets on downloads.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Calmpage.app"]
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args:           ["-dr", "com.apple.quarantine", "{{appdir}}/Calmpage.app"],
+        writable_paths: ["Calmpage.app"],
+        writable_base:  :appdir
   end
 
   zap trash: [
