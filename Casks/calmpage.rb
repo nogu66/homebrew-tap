@@ -1,6 +1,6 @@
 cask "calmpage" do
-  version "0.4.1"
-  sha256 "03a0ceeb86eeb3f38bba1c2de774d1b58514de63f366be244c1cb38857ecd8a7"
+  version "0.4.2"
+  sha256 "4307c2aaef8e7aeda79c64d99a704127be46f4229b12b12efc1fed320f2c8026"
 
   url "https://github.com/nogu66/calmpage/releases/download/v#{version}/Calmpage-#{version}-arm64-mac.zip"
   name "Calmpage"
